@@ -9,7 +9,7 @@ namespace SauceLabs_DotNetCore_Selenium
     public class Class1
     {
         [Test]
-        public void Test1()
+        public void SauceLabsTest()
         {
             Uri bsuri = new Uri("http://ondemand.saucelabs.com:80/wd/hub");
             IWebDriver driver;
@@ -17,8 +17,8 @@ namespace SauceLabs_DotNetCore_Selenium
             caps.SetCapability(CapabilityType.BrowserName, "chrome");
             caps.SetCapability(CapabilityType.Version, "60");
             caps.SetCapability(CapabilityType.Platform, "Windows 10");
-            caps.SetCapability("username", "nikolay-a");
-            caps.SetCapability("accessKey", "0fd366b1-548f-4ef4-8143-4746100fdf96");
+            caps.SetCapability("username", "");
+            caps.SetCapability("accessKey", "");
             caps.SetCapability("name", "testing");
             caps.SetCapability("idleTimeout", "15");
             driver = new RemoteWebDriver(bsuri, caps);
